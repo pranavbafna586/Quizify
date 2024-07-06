@@ -1,0 +1,76 @@
+.themes-section {
+  padding: 20px;
+}
+
+.theme-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.theme-tabs button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-tabs .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.theme-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.theme-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.theme-info {
+  margin-top: 10px;
+}
+
+.edit-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.customize-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.customization-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.save-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.your-themes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
