@@ -1,6 +1,6 @@
 .quiz-maker {
   font-family: Arial, sans-serif;
-  background-color: #0066cc;
+  background: linear-gradient(to bottom right, #0066cc, #004080);
   min-height: 100vh;
   color: white;
 }
@@ -40,7 +40,7 @@ p {
 }
 
 .generate-button {
-  background-color: #ff6347;
+  background: linear-gradient(to right, #ff6347, #ff4500);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -55,12 +55,16 @@ p {
   border-radius: 8px;
   padding: 1rem;
   color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 nav button {
@@ -68,15 +72,17 @@ nav button {
   border: none;
   color: #666;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
 
 input[type="text"] {
-  width: 100%;
-  padding: 0.5rem;
+  width: 90%;
+  padding: 0.75rem;
   margin-bottom: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 1rem;
 }
 
 .score-section {
@@ -88,32 +94,27 @@ input[type="text"] {
 select {
   flex-grow: 1;
   margin-right: 1rem;
-  padding: 0.75rem; /* Adjust padding for size */
+  padding: 0.75rem;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 1rem;
 }
 
 .add-question {
-  background-color: #ff6347;
-  color: white;
-  border: none;
-  padding: 1rem;
-  width: 100%;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 1rem;
   background: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1rem;
+  width: calc(100% - 40px);
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  display: inline-block; 
+  display: inline-block;
+  margin: 20px 20px 40px;
   cursor: pointer;
-  transition: background-position 0.3s ease-in-out; /* Smooth transition for background position */
-  background-size: 200% 100%; /* Set background size to allow movement */
-  background-position: left center; /* Initial position */
+  transition: background-position 0.3s ease-in-out;
+  background-size: 200% 100%;
+  background-position: left center;
 }
 
 .add-question:hover {
@@ -126,16 +127,17 @@ select {
 }
 
 .quiz-actions button {
-  padding: 1rem 2rem; 
+  display: inline-block;
+  width: auto;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem; /* Adjust font size */
+  font-size: 0.9rem;
 }
 
 .quiz-actions button:first-child {
   background-color: #f0f0f0;
-  color:#0066cc;
   color: #333;
 }
 
@@ -148,18 +150,41 @@ select {
   background: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
   border: none;
   color: white;
-  padding: 15px 16px;
+  padding: 0.5rem 0.5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 0 20px 40px 20px;
+  font-size: 0.9rem;
+  margin: 1rem 0.5rem;
   cursor: pointer;
-  transition: background-position 0.3s ease-in-out; /* Smooth transition for background position */
-  background-size: 200% 100%; /* Set background size to allow movement */
-  background-position: left center; /* Initial position */
+  border-radius: 4px;
+  transition: background-position 0.3s ease-in-out;
+  background-size: 200% 100%;
+  background-position: left center;
+  white-space: nowrap;
 }
 
 .AddGrades:hover {
-  background-position: right center; 
+  background-position: right center;
+}
+
+.Preview {
+  background: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-position 0.3s ease-in-out;
+  background-size: 200% 100%;
+  background-position: left center;
+}
+
+.Preview:hover {
+  background-position: right center;
 }

@@ -1,9 +1,8 @@
-// components/QuizMaker.jsx
 import './App.css';
 import React, { useState } from 'react';
 import './components/QuizMaker.css';
-import ThemesSection from './components/ThemesSection';
-import GenerateQuizButton from './components/GenerateQuizButton';
+import ThemesSection from './components/ThemesSection/ThemesSection';
+import GenerateQuizButton from './components/GenerateQuizButton/GenerateQuizButton';
 
 const QuizMaker = () => {
   const [quizTitle, setQuizTitle] = useState('');
@@ -18,11 +17,11 @@ const QuizMaker = () => {
       
       <main>
         <h2>Create an awesome quiz in minutes</h2>
-        <p>Quiz Maker is the easiest way to make quizzes FREE</p>
+        <p>Quizify is the easiest way to make quizzes FREE</p>
       
         <GenerateQuizButton />
         <div className="quiz-editor">
-          <nav>
+          <nav className="quizbutton">
             <button onClick={() => setActiveSection('Quiz')}>Quiz</button>
             <button onClick={() => setActiveSection('Themes')}>Themes</button>
             <button onClick={() => setActiveSection('Results')}>Results</button>
@@ -51,7 +50,7 @@ const QuizMaker = () => {
                   <option>Survey / Other</option>
                   <option>Copy a Template...</option>
                 </select>
-                <button className='AddGrades'>Add Grades</button>
+                <button className='AddGrades'>Set Scores</button>
               </div>
               
               <button className="add-question">+ ADD QUESTION</button>
@@ -62,7 +61,7 @@ const QuizMaker = () => {
           
           <div className="quiz-actions">
             <button>New Quiz</button>
-            <button className='AddGrades'>Preview</button>
+            <button className='Preview'>Preview</button>
           </div>
         </div>
       </main>
